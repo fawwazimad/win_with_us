@@ -48,16 +48,7 @@ class _SignUpPageState extends State<SignUpPage> {
         backgroundColor:Colors.grey[200],
         elevation: 0,
         centerTitle: true,
-        leading: ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.transparent,
-              elevation: 0,
-              shadowColor: Colors.transparent,
-            ),
-            onPressed: () {
-              Navigator.of(context).pop();
-            },
-            child: Icon(Icons.arrow_back,color: Colors.black,)),
+        leading: BackButton(color: Colors.black,)
       ),
       body: _buildContent(context),
       backgroundColor: Colors.grey[200],

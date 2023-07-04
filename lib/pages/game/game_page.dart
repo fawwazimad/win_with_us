@@ -13,16 +13,7 @@ class GamePage extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.redAccent,
           elevation: 0,
-          leading: ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.transparent,
-                elevation: 0,
-                shadowColor: Colors.transparent,
-              ),
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-              child: Icon(Icons.arrow_back)),
+          leading: BackButton(),
           title: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Row(

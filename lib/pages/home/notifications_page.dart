@@ -15,16 +15,7 @@ class NotificationsPage extends StatelessWidget
         backgroundColor: Colors.redAccent,
         elevation: 0,
         centerTitle: true,
-        leading: ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.transparent,
-              elevation: 0,
-              shadowColor: Colors.transparent,
-            ),
-            onPressed: () {
-              Navigator.of(context).pop();
-            },
-            child: Icon(Icons.arrow_back)),
+        leading: BackButton()
       ),
       backgroundColor: Colors.redAccent,
       body: SafeArea(
