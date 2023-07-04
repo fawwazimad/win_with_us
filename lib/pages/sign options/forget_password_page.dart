@@ -1,4 +1,3 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 import 'package:win_with_us/common_widgets/logo_box.dart';
@@ -26,11 +25,11 @@ class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(' نسيت كلمة السر ',style: TextStyle(color: Colors.black),),
+        title: const Text(' نسيت كلمة السر ',style: TextStyle(color: Colors.black),),
         backgroundColor: Colors.grey[200],
         elevation: 0,
         centerTitle: true,
-        leading: BackButton(color: Colors.black,)
+        leading: const BackButton(color: Colors.black,)
       ),
       body: _buildContent(context),
       backgroundColor: Colors.grey[200],
@@ -44,10 +43,10 @@ class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SizedBox(height: 50,),
-            LogoBox(height: 150),
-            SizedBox(height: 50,),
-            Column(
+            const SizedBox(height: 50,),
+            const LogoBox(height: 150),
+            const SizedBox(height: 50,),
+            const Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Icon(

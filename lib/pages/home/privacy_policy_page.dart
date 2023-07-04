@@ -1,4 +1,3 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 
@@ -10,14 +9,14 @@ class PrivacyPolicyPage extends StatelessWidget
   Widget build(BuildContext context) {
      return Scaffold(
        appBar: AppBar(
-         title: Text('سياسة الخصوصية'),
+         title: const Text('سياسة الخصوصية'),
          backgroundColor: Colors.redAccent,
          elevation: 0,
          centerTitle: true,
-         leading: BackButton()
+         leading: const BackButton()
        ),
        backgroundColor: Colors.redAccent,
-       body: SafeArea(
+       body: const SafeArea(
            child: Center(
                child: Row(
                  mainAxisAlignment: MainAxisAlignment.center,

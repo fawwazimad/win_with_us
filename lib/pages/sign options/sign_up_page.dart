@@ -1,4 +1,3 @@
-// ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
 import 'package:win_with_us/common_widgets/logo_box.dart';
@@ -44,11 +43,11 @@ class _SignUpPageState extends State<SignUpPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('التسجيل ',style: TextStyle(color: Colors.black), ),
+        title: const Text('التسجيل ',style: TextStyle(color: Colors.black), ),
         backgroundColor:Colors.grey[200],
         elevation: 0,
         centerTitle: true,
-        leading: BackButton(color: Colors.black,)
+        leading: const BackButton(color: Colors.black,)
       ),
       body: _buildContent(context),
       backgroundColor: Colors.grey[200],

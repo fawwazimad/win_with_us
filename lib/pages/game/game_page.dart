@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
-
 import 'package:flutter/material.dart';
 import 'package:win_with_us/pages/home/notifications_page.dart';
 
@@ -13,7 +11,7 @@ class GamePage extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.redAccent,
           elevation: 0,
-          leading: BackButton(),
+          leading: const BackButton(),
           title: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Row(
@@ -31,15 +29,15 @@ class GamePage extends StatelessWidget {
                               'assets/images/percent.png',
                               width: 40,
                             ),
-                            Text(
+                            const Text(
                               'حذف  إجابتين',
-                              style: const TextStyle(
+                              style: TextStyle(
                                   fontSize: 10, color: Colors.white),
                             ),
                           ],
                         ),
                       ),
-                      Text(
+                      const Text(
                         "1",
                         style: TextStyle(fontSize: 12),
                       ),
@@ -56,15 +54,15 @@ class GamePage extends StatelessWidget {
                               'assets/images/switch.png',
                               width: 40,
                             ),
-                            Text(
+                            const Text(
                               'تبديل السؤال',
-                              style: const TextStyle(
+                              style: TextStyle(
                                   fontSize: 10, color: Colors.white),
                             ),
                           ],
                         ),
                       ),
-                      Text(
+                      const Text(
                         "2",
                         style: TextStyle(fontSize: 12),
                       ),
@@ -81,15 +79,15 @@ class GamePage extends StatelessWidget {
                               'assets/images/alert.png',
                               width: 40,
                             ),
-                            Text(
+                            const Text(
                               'إيقاف مؤقت',
-                              style: const TextStyle(
+                              style: TextStyle(
                                   fontSize: 10, color: Colors.white),
                             ),
                           ],
                         ),
                       ),
-                      Text(
+                      const Text(
                         "3",
                         style: TextStyle(fontSize: 12),
                       ),
@@ -101,16 +99,16 @@ class GamePage extends StatelessWidget {
             IconButton(
                 onPressed: () {
                   Navigator.of(context).push(
-                      MaterialPageRoute(builder: (_) => NotificationsPage()));
+                      MaterialPageRoute(builder: (_) => const NotificationsPage()));
                 },
-                icon: Icon(
+                icon: const Icon(
                   Icons.notifications,
                   size: 40,
                   color: Colors.white,
                 ))
           ],
         ),
-        body: Center(
+        body: const Center(
           child: Text(
             'Game Page',
             style: TextStyle(color: Colors.white),

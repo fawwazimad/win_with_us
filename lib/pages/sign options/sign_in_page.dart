@@ -1,4 +1,3 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 import 'package:win_with_us/common_widgets/custom_raised_button.dart';
@@ -51,8 +50,8 @@ class _SignInPageState extends State<SignInPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              SizedBox(height: 50,),
-              LogoBox(height: 120,),
+              const SizedBox(height: 50,),
+              const LogoBox(height: 120,),
               welcomeBackText(),
               const SizedBox(height: 10),
               logInToYourAccountText(),
@@ -153,7 +152,7 @@ class _SignInPageState extends State<SignInPage> {
         Navigator.of(context).push(
           MaterialPageRoute<void>(
             fullscreenDialog: true,
-            builder: (context) => ReadyPage(),
+            builder: (context) => const ReadyPage(),
           ),
         );
       },
@@ -202,7 +201,7 @@ class _SignInPageState extends State<SignInPage> {
     Navigator.of(context).push(
       MaterialPageRoute<void>(
         fullscreenDialog: true,
-        builder: (context) => SignUpPage(),
+        builder: (context) => const SignUpPage(),
       ),
     );
   }
@@ -230,10 +229,10 @@ class _SignInPageState extends State<SignInPage> {
       Navigator.of(context).push(
           MaterialPageRoute<void>(
           fullscreenDialog: true,
-          builder: (context) => GamePage()));
+          builder: (context) => const GamePage()));
     },
         color: Colors.redAccent,
-        child: Row(
+        child: const Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Icon(Icons.one_x_mobiledata),

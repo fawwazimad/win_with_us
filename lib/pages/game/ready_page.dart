@@ -1,4 +1,3 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 import 'package:win_with_us/common_widgets/custom_raised_button.dart';
@@ -26,28 +25,28 @@ class ReadyPage extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          LogoBox(height: 150),
+          const LogoBox(height: 150),
           //Center(child: rulesText()),
           Column(
             children: [
-              Center(child: sampleButton(context,'ابدأ المسابقة',GamePage())),
-              SizedBox(height: 10,),
-              Center(child: sampleButton(context,'عن التطبيق',AboutUsPage())),
-              SizedBox(height: 10,),
-              Center(child: sampleButton(context,'سياسة الخصوصية',PrivacyPolicyPage() )),
-              SizedBox(height: 10,),
-              Center(child: sampleButton(context,'تسجيل الخروج',SignInPage())),
-              SizedBox(height: 50,),
-              Text('تواصل معنا',style: TextStyle(color: Colors.white),),
-              SizedBox(height: 10,),
+              Center(child: sampleButton(context,'ابدأ المسابقة',const GamePage())),
+              const SizedBox(height: 10,),
+              Center(child: sampleButton(context,'عن التطبيق',const AboutUsPage())),
+              const SizedBox(height: 10,),
+              Center(child: sampleButton(context,'سياسة الخصوصية',const PrivacyPolicyPage() )),
+              const SizedBox(height: 10,),
+              Center(child: sampleButton(context,'تسجيل الخروج',const SignInPage())),
+              const SizedBox(height: 50,),
+              const Text('تواصل معنا',style: TextStyle(color: Colors.white),),
+              const SizedBox(height: 10,),
 
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   CustomRaisedButton(color:Colors.white , child: SizedBox(width:20,height:20,child: Image.asset('assets/images/Facebook.png')), onPressed: (){} ),
-                  SizedBox(width: 10,),
+                  const SizedBox(width: 10,),
                   CustomRaisedButton(color:Colors.white , child: SizedBox(width:20,height:20,child: Image.asset('assets/images/twitter.png')), onPressed: (){} ),
-                  SizedBox(width: 10,),
+                  const SizedBox(width: 10,),
                   CustomRaisedButton(color:Colors.white , child: SizedBox(width:20,height:20,child: Image.asset('assets/images/google.png')), onPressed: (){} ),
                 ],
               )
@@ -73,7 +72,7 @@ class ReadyPage extends StatelessWidget {
         padding: const EdgeInsets.all(10),
         child: Text(
           text,
-          style: TextStyle(color: Colors.black,fontSize: 22),
+          style: const TextStyle(color: Colors.black,fontSize: 22),
 
         ),
       ),
