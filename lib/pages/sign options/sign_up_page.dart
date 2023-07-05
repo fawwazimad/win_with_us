@@ -66,7 +66,7 @@ class _SignUpPageState extends State<SignUpPage> {
                   const LogoBox(height: 120),
                   const SizedBox(height: 15),
                   const Text(
-                    'أهلا بك !',
+                    '!أهلا بك ',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Colors.black45,
