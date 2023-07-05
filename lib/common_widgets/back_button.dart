@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../constants/constants.dart';
 
 class BackButton extends StatelessWidget {
   const BackButton({super.key});
@@ -11,7 +12,7 @@ class BackButton extends StatelessWidget {
       },
       child: const Icon(
         Icons.arrow_back,
-        color: Colors.white,
+        color: Constants.secondaryColor,
       ),
     );
   }

@@ -1,5 +1,7 @@
 
 import 'package:flutter/material.dart';
+
+import '../../constants/constants.dart';
 class AboutUsPage extends StatelessWidget {
   const AboutUsPage({super.key});
 
@@ -8,12 +10,12 @@ class AboutUsPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('عن التطبيق '),
-        backgroundColor: Colors.redAccent,
+        backgroundColor: Constants.primaryColor,
         elevation: 0,
         centerTitle: true,
         leading: const BackButton(),
       ),
-      backgroundColor: Colors.redAccent,
+      backgroundColor: Constants.primaryColor,
       body: const SafeArea(
           child: Center(
               child: Row(
@@ -22,11 +24,11 @@ class AboutUsPage extends StatelessWidget {
           Icon(
             Icons.error_outline,
             size: 50,
-            color: Colors.white,
+            color: Constants.secondaryColor,
           ),
           Text(
             'لا يوجد معلومات بعد',
-            style: TextStyle(color: Colors.white, fontSize: 30),
+            style: TextStyle(color: Constants.secondaryColor, fontSize: 30),
           ),
         ],
       ))),

@@ -4,6 +4,7 @@ import 'package:win_with_us/common_widgets/custom_raised_button.dart';
 //import 'package:styled_text/styled_text.dart';
 import 'package:win_with_us/pages/game/game_page.dart';
 import '../../common_widgets/logo_box.dart';
+import '../../constants/constants.dart';
 import '../home/about_us_page.dart';
 import '../home/privacy_policy_page.dart';
 import '../sign options/sign_in_page.dart';
@@ -14,7 +15,7 @@ class ReadyPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.redAccent,
+      backgroundColor: Constants.primaryColor,
       body: buildContent(context),
     );
   }
@@ -24,6 +25,8 @@ class ReadyPage extends StatelessWidget {
       padding: const EdgeInsets.all(20),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
+
+
         children: [
           const LogoBox(height: 150),
           //Center(child: rulesText()),
@@ -37,17 +40,17 @@ class ReadyPage extends StatelessWidget {
               const SizedBox(height: 10,),
               Center(child: sampleButton(context,'تسجيل الخروج',const SignInPage())),
               const SizedBox(height: 50,),
-              const Text('تواصل معنا',style: TextStyle(color: Colors.white),),
+              const Text('تواصل معنا',style: TextStyle(color: Constants.secondaryColor),),
               const SizedBox(height: 10,),
 
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  CustomRaisedButton(color:Colors.white , child: SizedBox(width:20,height:20,child: Image.asset('assets/images/Facebook.png')), onPressed: (){} ),
+                  CustomRaisedButton(color:Constants.secondaryColor , child: SizedBox(width:20,height:20,child: Image.asset('assets/images/Facebook.png')), onPressed: (){} ),
                   const SizedBox(width: 10,),
-                  CustomRaisedButton(color:Colors.white , child: SizedBox(width:20,height:20,child: Image.asset('assets/images/twitter.png')), onPressed: (){} ),
+                  CustomRaisedButton(color:Constants.secondaryColor , child: SizedBox(width:20,height:20,child: Image.asset('assets/images/twitter.png')), onPressed: (){} ),
                   const SizedBox(width: 10,),
-                  CustomRaisedButton(color:Colors.white , child: SizedBox(width:20,height:20,child: Image.asset('assets/images/google.png')), onPressed: (){} ),
+                  CustomRaisedButton(color:Constants.secondaryColor , child: SizedBox(width:20,height:20,child: Image.asset('assets/images/google.png')), onPressed: (){} ),
                 ],
               )
             ],
@@ -67,12 +70,12 @@ class ReadyPage extends StatelessWidget {
           ),
         );
       },
-      color: Colors.white,
+      color: Constants.secondaryColor,
       child: Padding(
         padding: const EdgeInsets.all(10),
         child: Text(
           text,
-          style: const TextStyle(color: Colors.black,fontSize: 22),
+          style: const TextStyle(color: Constants.thirdColor,fontSize: 22),
 
         ),
       ),
@@ -85,7 +88,7 @@ class ReadyPage extends StatelessWidget {
     return Center(
       child: Container(
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: Constants.secondaryColor,
           borderRadius: BorderRadius.circular(16),
           boxShadow: [
             BoxShadow(

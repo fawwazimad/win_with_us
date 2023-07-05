@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:win_with_us/common_widgets/logo_box.dart';
 
 import '../../common_widgets/custom_raised_button.dart';
+import '../../constants/constants.dart';
 
 class ForgetPasswordPage extends StatefulWidget {
   const ForgetPasswordPage({Key? key}) : super(key: key);
@@ -25,11 +26,11 @@ class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(' نسيت كلمة السر ',style: TextStyle(color: Colors.black),),
+        title: const Text(' نسيت كلمة السر ',style: TextStyle(color: Constants.thirdColor),),
         backgroundColor: Colors.grey[200],
         elevation: 0,
         centerTitle: true,
-        leading: const BackButton(color: Colors.black,)
+        leading: const BackButton(color: Constants.thirdColor,)
       ),
       body: _buildContent(context),
       backgroundColor: Colors.grey[200],
@@ -52,7 +53,7 @@ class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
                 Icon(
                   Icons.email,
                   size: 80,
-                  color: Colors.redAccent,
+                  color: Constants.primaryColor,
                 ),
                 SizedBox(height: 20),
                 Text(
@@ -61,7 +62,7 @@ class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
-                    color: Colors.black,
+                    color: Constants.thirdColor,
                   ),
                 ),
               ],
@@ -102,7 +103,7 @@ class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
     return Padding(
         padding: const EdgeInsets.only(left: 8.0, right: 8.0),
         child: CustomRaisedButton(
-          color:Colors.redAccent,
+          color:Constants.primaryColor,
             child: const Text('ارسال'),
             onPressed: () async {
               ScaffoldMessenger.of(context).showSnackBar(const SnackBar(

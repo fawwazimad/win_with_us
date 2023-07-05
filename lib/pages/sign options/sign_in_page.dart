@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:win_with_us/common_widgets/custom_raised_button.dart';
 import 'package:win_with_us/pages/game/game_page.dart';
 import 'package:win_with_us/pages/game/ready_page.dart';
-
 import '../../common_widgets/logo_box.dart';
+import '../../constants/constants.dart';
 import 'forget_password_page.dart';
 import 'sign_up_page.dart';
 
@@ -156,11 +156,11 @@ class _SignInPageState extends State<SignInPage> {
           ),
         );
       },
-      color: Colors.redAccent,
+      color: Constants.primaryColor,
       child: const Text(
         'تسجيل الدخول',
         style: TextStyle(
-          color: Colors.white,
+          color: Constants.secondaryColor,
           fontWeight: FontWeight.bold,
           fontSize: 17,
         ),
@@ -231,7 +231,7 @@ class _SignInPageState extends State<SignInPage> {
           fullscreenDialog: true,
           builder: (context) => const GamePage()));
     },
-        color: Colors.redAccent,
+        color: Constants.primaryColor,
         child: const Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
@@ -239,7 +239,7 @@ class _SignInPageState extends State<SignInPage> {
         Text(
           'تجربة لمرة واحدة',
           style: TextStyle(
-            color: Colors.white,
+            color: Constants.secondaryColor,
             fontWeight: FontWeight.bold,
             fontSize: 17,
           ),

@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
 
 
+import 'constants/constants.dart';
 import 'pages/sign options/sign_in_page.dart';
 
 void main() {
@@ -35,7 +36,7 @@ class _WinWithUsState extends State<WinWithUs> {
         home: AnimatedSplashScreen(
           splashIconSize: 300,
           splash: 'assets/images/logo.png',
-          backgroundColor: Colors.redAccent,
+          backgroundColor: Constants.primaryColor,
           nextScreen: SignInPage(),
           splashTransition: SplashTransition.scaleTransition,
           duration: 3000,

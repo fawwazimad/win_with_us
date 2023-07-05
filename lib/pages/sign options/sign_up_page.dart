@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:win_with_us/common_widgets/logo_box.dart';
 
 import '../../common_widgets/custom_raised_button.dart';
+import '../../constants/constants.dart';
 
 class SignUpPage extends StatefulWidget {
   const SignUpPage({Key? key}) : super(key: key);
@@ -43,11 +44,11 @@ class _SignUpPageState extends State<SignUpPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('التسجيل ',style: TextStyle(color: Colors.black), ),
+        title: const Text('التسجيل ',style: TextStyle(color: Constants.thirdColor), ),
         backgroundColor:Colors.grey[200],
         elevation: 0,
         centerTitle: true,
-        leading: const BackButton(color: Colors.black,)
+        leading: const BackButton(color: Constants.thirdColor,)
       ),
       body: _buildContent(context),
       backgroundColor: Colors.grey[200],
@@ -198,11 +199,11 @@ class _SignUpPageState extends State<SignUpPage> {
   CustomRaisedButton buttonRegister()
   {
     return CustomRaisedButton(
-      color: Colors.redAccent,
+      color: Constants.primaryColor,
       child: const Text(
         'تسجيل',
         style: TextStyle(
-          color: Colors.white,
+          color: Constants.secondaryColor,
           fontWeight: FontWeight.bold,
           fontSize: 17,
         ),

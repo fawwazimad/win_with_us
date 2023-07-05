@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:win_with_us/constants/constants.dart';
 import 'package:win_with_us/pages/home/notifications_page.dart';
 
 class GamePage extends StatelessWidget {
@@ -7,9 +8,9 @@ class GamePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.redAccent,
+        backgroundColor: Constants.primaryColor,
         appBar: AppBar(
-          backgroundColor: Colors.redAccent,
+          backgroundColor: Constants.primaryColor,
           elevation: 0,
           leading: const BackButton(),
           title: Padding(
@@ -32,7 +33,7 @@ class GamePage extends StatelessWidget {
                             const Text(
                               'حذف  إجابتين',
                               style: TextStyle(
-                                  fontSize: 10, color: Colors.white),
+                                  fontSize: 10, color: Constants.secondaryColor),
                             ),
                           ],
                         ),
@@ -57,7 +58,7 @@ class GamePage extends StatelessWidget {
                             const Text(
                               'تبديل السؤال',
                               style: TextStyle(
-                                  fontSize: 10, color: Colors.white),
+                                  fontSize: 10, color: Constants.secondaryColor),
                             ),
                           ],
                         ),
@@ -82,7 +83,7 @@ class GamePage extends StatelessWidget {
                             const Text(
                               'إيقاف مؤقت',
                               style: TextStyle(
-                                  fontSize: 10, color: Colors.white),
+                                  fontSize: 10, color: Constants.secondaryColor),
                             ),
                           ],
                         ),
@@ -104,14 +105,14 @@ class GamePage extends StatelessWidget {
                 icon: const Icon(
                   Icons.notifications,
                   size: 40,
-                  color: Colors.white,
+                  color: Constants.secondaryColor,
                 ))
           ],
         ),
         body: const Center(
           child: Text(
             'Game Page',
-            style: TextStyle(color: Colors.white),
+            style: TextStyle(color: Constants.secondaryColor),
           ),
         ));
   }

@@ -1,6 +1,8 @@
 
 import 'package:flutter/material.dart';
 
+import '../../constants/constants.dart';
+
 class PrivacyPolicyPage extends StatelessWidget
 {
   const PrivacyPolicyPage({super.key});
@@ -10,12 +12,12 @@ class PrivacyPolicyPage extends StatelessWidget
      return Scaffold(
        appBar: AppBar(
          title: const Text('سياسة الخصوصية'),
-         backgroundColor: Colors.redAccent,
+         backgroundColor: Constants.primaryColor,
          elevation: 0,
          centerTitle: true,
          leading: const BackButton()
        ),
-       backgroundColor: Colors.redAccent,
+       backgroundColor: Constants.primaryColor,
        body: const SafeArea(
            child: Center(
                child: Row(
@@ -24,11 +26,11 @@ class PrivacyPolicyPage extends StatelessWidget
                    Icon(
                      Icons.error_outline,
                      size: 50,
-                     color: Colors.white,
+                     color: Constants.secondaryColor,
                    ),
                    Text(
                      'لا يوجد معلومات بعد',
-                     style: TextStyle(color: Colors.white, fontSize: 30),
+                     style: TextStyle(color: Constants.secondaryColor, fontSize: 30),
                    ),
                  ],
                ))),
