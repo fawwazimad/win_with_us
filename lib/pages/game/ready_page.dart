@@ -29,7 +29,6 @@ class ReadyPage extends StatelessWidget {
 
         children: [
           const LogoBox(height: 150),
-          //Center(child: rulesText()),
           Column(
             children: [
               Center(child: sampleButton(context,'ابدأ المسابقة',const GamePage())),
@@ -42,7 +41,6 @@ class ReadyPage extends StatelessWidget {
               const SizedBox(height: 50,),
               const Text('تواصل معنا',style: TextStyle(color: Constants.secondaryColor),),
               const SizedBox(height: 10,),
-
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -71,8 +69,9 @@ class ReadyPage extends StatelessWidget {
         );
       },
       color: Constants.secondaryColor,
-      child: Padding(
-        padding: const EdgeInsets.all(10),
+      child: Container(
+        margin: const EdgeInsets.all(5),
+        padding: const EdgeInsets.all(5),
         child: Text(
           text,
           style: const TextStyle(color: Constants.thirdColor,fontSize: 22),
@@ -84,40 +83,5 @@ class ReadyPage extends StatelessWidget {
 
   }
 
-/*  Center rulesText() {
-    return Center(
-      child: Container(
-        decoration: BoxDecoration(
-          color: Constants.secondaryColor,
-          borderRadius: BorderRadius.circular(16),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black.withOpacity(0.3),
-              spreadRadius: 2,
-              blurRadius: 5,
-              offset: Offset(0, 3),
-            ),
-          ],
-        ),
-        child: Center(
-          child: Padding(
-            padding: const EdgeInsets.all(15.0),
-            child: StyledText(
-              text: '<size><color=#FF0000><bold>مرحبًا بك!</bold></color></size>\n'
-                  '<size><color=#FF0000>تفضل بالاطلاع على القواعد التالية:</color></size>\n'
-                  '<size><color=#FF0000>1. المسابقة مكونة من 8 أسئلة تتدرج بالصعوبة.</color></size>\n'
-                  '<size><color=#008000>2. لديك 3 وسائل مساعدة يمكنك استخدامها.</color></size>\n'
-                  '<size><color=#0000FF>3. تذكر الاجابة على كل سؤال قبل نهاية الوقت.</color></size>\n',
-              tags: {
-                'bold': StyledTextTag(
-                    style: TextStyle(fontWeight: FontWeight.bold,height: 2)),
-                'color': StyledTextTag(style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold)),
-                'size': StyledTextTag(style: TextStyle(fontSize: 18)),
-              },
-            ),
-          ),
-        ),
-      ));
-  }
-*/
+
 }
