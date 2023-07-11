@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:win_with_us/common_widgets/custom_raised_button.dart';
 import 'package:win_with_us/pages/game/game_page.dart';
@@ -56,7 +55,7 @@ class _SignInPageState extends State<SignInPage> {
               const SizedBox(height: 10),
               logInToYourAccountText(),
               const SizedBox(height: 10),
-              buildEmailCard(context),
+              buildEmailCard(),
               const SizedBox(height: 10),
               buildPasswordCard(),
               const SizedBox(height: 15),
@@ -102,7 +101,7 @@ class _SignInPageState extends State<SignInPage> {
     FocusScope.of(context).requestFocus(_passwordFocusNode);
   }
 
-  Card buildEmailCard(BuildContext context) {
+  Card buildEmailCard() {
     return Card(
       elevation: 2,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
