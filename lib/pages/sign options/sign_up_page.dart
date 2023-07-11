@@ -65,25 +65,9 @@ class _SignUpPageState extends State<SignUpPage> {
                   const SizedBox(height: 50,),
                   const LogoBox(height: 120),
                   const SizedBox(height: 15),
-                  const Text(
-                    '!أهلا بك ',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Colors.black45,
-                      fontSize: 25.0,
-                      fontWeight: FontWeight.normal,
-                    ),
-                  ),
+                  welcomeBackText(),
                   const SizedBox(height: 10),
-                  const Text(
-                    'أنشئ حساب جديد',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Colors.black45,
-                      fontSize: 15.0,
-                      fontWeight: FontWeight.normal,
-                    ),
-                  ),
+                  registerText(),
                   const SizedBox(height: 20),
                   buildNameCard(),
                   const SizedBox(height: 10),
@@ -97,6 +81,29 @@ class _SignUpPageState extends State<SignUpPage> {
                 ])));
   }
 
+  Text registerText()
+  {
+    return const Text(
+      'أنشئ حساب جديد',
+      textAlign: TextAlign.center,
+      style: TextStyle(
+        color: Colors.black45,
+        fontSize: 15.0,
+        fontWeight: FontWeight.normal,
+      ),
+    );
+  }
+  Text welcomeBackText() {
+    return const Text(
+      '!أهلا بك',
+      textAlign: TextAlign.center,
+      style: TextStyle(
+        color: Colors.black45,
+        fontSize: 25.0,
+        fontWeight: FontWeight.bold,
+      ),
+    );
+  }
   Row signUpRowChildren(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
@@ -196,8 +203,7 @@ class _SignUpPageState extends State<SignUpPage> {
     );
   }
 
-  CustomRaisedButton buttonRegister()
-  {
+  CustomRaisedButton buttonRegister() {
     return CustomRaisedButton(
       color: Constants.primaryColor,
       child: const Text(

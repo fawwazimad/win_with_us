@@ -32,12 +32,12 @@ class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
         centerTitle: true,
         leading: const BackButton(color: Constants.thirdColor,)
       ),
-      body: _buildContent(context),
+      body: buildContent(context),
       backgroundColor: Colors.grey[200],
     );
   }
 
-  Widget _buildContent(BuildContext context) {
+  Widget buildContent(BuildContext context) {
     return SingleChildScrollView(
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -47,24 +47,16 @@ class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
             const SizedBox(height: 50,),
             const LogoBox(height: 150),
             const SizedBox(height: 50,),
-            const Column(
+             Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Icon(
+                const Icon(
                   Icons.email,
                   size: 80,
                   color: Constants.primaryColor,
                 ),
-                SizedBox(height: 20),
-                Text(
-                  'سوف تصلك رسالة بها رابط لاعادة تعيين كلمة السر',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                    color: Constants.thirdColor,
-                  ),
-                ),
+                const SizedBox(height: 20),
+                sendText()
               ],
             ),
                 const SizedBox(height: 20),
@@ -78,6 +70,18 @@ class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
     );
   }
 
+  Text sendText()
+  {
+    return const Text(
+      'سوف تصلك رسالة بها رابط لاعادة تعيين كلمة السر',
+      textAlign: TextAlign.center,
+      style: TextStyle(
+        fontSize: 18,
+        fontWeight: FontWeight.bold,
+        color: Constants.thirdColor,
+      ),
+    );
+  }
   Card buildEmailCard(BuildContext context) {
     return Card(
       elevation: 2,

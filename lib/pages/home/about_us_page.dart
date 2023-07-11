@@ -1,7 +1,7 @@
-
 import 'package:flutter/material.dart';
 
 import '../../constants/constants.dart';
+
 class AboutUsPage extends StatelessWidget {
   const AboutUsPage({super.key});
 
